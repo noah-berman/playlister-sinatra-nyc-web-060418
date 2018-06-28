@@ -1,0 +1,12 @@
+<h1><%= @genre.name %></h1>
+
+<h2>Artists of this genre</h2>
+<p>  <% @genre.artists.map do |artist| %>
+  <%= artist.name %> <br>
+  <% end %><br>
+
+  <h2>Songs of this genre</h2>
+  <% @genre.songs.map do |song| %>
+  <%= song.name %> <br>
+  <% end %>
+</p>
